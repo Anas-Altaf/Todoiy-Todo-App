@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todoiy</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">TODOIY</h1>
+        <section class="top-bar">
+            <div class="input-group">
+                <input type="text" id="new-task" placeholder="Enter new task...">
+                <select id="task-priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <input type="text" id="search" placeholder="Search tasks...">
+                <select id="filter-priority">
+                    <option value="all">All Priorities</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <span class="toggle-mode"><img src="./images/mode.png" alt=""></span>
+        </section>
+
+        <section class="cat-bar">
+            <span class="incomplete-task">Incomplete (0)</span>
+            <!-- <span class="completed-task">Completed</span> -->
+        </section>
+
+        <section class="task-list">
+            <!-- Tasks will be appended here -->
+        </section>
+
+        <div class="operations">
+            <button id="add-task-btn" class="round-btn">+</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
